@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="pre-set.css">
+	
+    <title>Contato - Barbearia Alura</title>
+</head>
+<body>
+    <header>
+		<div class="caixa">
+			<h1>
+				<img src="imagens/logo.png" alt="logo-cabeçalho">
+			</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">home</a></li>
+					<li><a href="produtos.html">produtos</a></li>
+					<li><a href="contato.html">contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+    <main>
+        <div class="caixa">
+            <form>
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite aqui seu nome completo">
+
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="exemplo@email.com">
+
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" mask="(00) 00000-0000"
+                placeholder="DDD + telefone">
+
+                <label for="mensagem">Interesse:</label>
+                <textarea cols="80%" rows="8" id="mensagem" name="mensagem"
+                placeholder="Descreva qual o objetivo do seu contato"></textarea>
+
+                <div>
+                    <p>Como deseja receber nossa resposta?</p>
+
+                    <label for="buttonEmail">Email</label>
+                    <input type="radio" value="email" id="buttonEmail" name="contato">
+                    
+                    <label for="buttonChamada">Chamada telefônica</label>
+                    <input type="radio" value="chamada" id="buttonChamada" name="contato">
+
+                    <label for="buttonWhats">Whatsapp</label>
+                    <input type="radio" value="whatsapp" id="buttonWhats" name="contato">
+                </div>
+
+                <label>Gostaria de receber nossas novidades, via e-mail?<input type="checkbox"></label>
+                
+                <input type="submit" value="Enviar formulário">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <img src="imagens/logo-branco.png" alt="logo-rodapé">
+            <p class="copyright">&copy;Copyright Barbearia Alura - 2022</p>
+        </div>
+    </footer>
+</body>
+</html>
